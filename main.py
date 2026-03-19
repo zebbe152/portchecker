@@ -169,7 +169,6 @@ def run():
             if (
                 is_valid_port(config["torrent_port"])  # 🟢 NYTT
                 and str(qbit_port) != config["torrent_port"]
-                and qbit_port
             ):
                 qbit_set_port(config)
                 write_log(config, f'old port: {qbit_port} new port: {config["torrent_port"]}')
